@@ -82,10 +82,12 @@
       <h1 class="home-title">{{site.name}}</h1>
       <p class="lead">{{page.description}}</p>
       <p class="lead">
-        {% if site.download.popup %}
-        <a data-bootbox="download-popup" data-bootbox-size="large" class="btn btn-outline-inverse btn-lg">Download</a>
-        {% else %}
-        <a href="{{site.download.url}}" class="btn btn-outline-inverse btn-lg">Download</a>
+        {% if site.download.enable %}
+          {% if site.download.popup %}
+          <a data-bootbox="download-popup" data-bootbox-size="large" class="btn btn-outline-inverse btn-lg">Download</a>
+          {% else %}
+          <a href="{{site.download.url}}" class="btn btn-outline-inverse btn-lg">Download</a>
+          {% endif %}
         {% endif %}
       </p>
       <p class="version">Currently v{{site.version}}</p>

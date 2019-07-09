@@ -164,3 +164,36 @@ h5:hover .anchor-link {
     transform: rotateZ(-360deg);
   }
 }
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@font-face {
+  font-family: 'Calibre';
+  font-weight: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/Calibre-Regular.ttf');
+}
+@font-face {
+  font-family: 'Calibre';
+  font-weight: 500;
+  src: url('../assets/fonts/Calibre-Medium.ttf');
+}
+@font-face {
+  font-family: 'Calibre';
+  font-weight: bold;
+  font-weight: 600;
+  src: url('../assets/fonts/Calibre-Semibold.ttf');
+}
+@font-face {
+  font-family: 'Calibre';
+  font-weight: 700;
+  src: url('../assets/fonts/Calibre-Bold.ttf');
+}
+
+$usac-primary-font: 'Calibre';
+$usac-secondary-font: 'Roboto';
+
+.calibre {
+  font-family: 'Calibre', $usac-primary-font;
+}
